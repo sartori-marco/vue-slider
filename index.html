@@ -17,11 +17,11 @@
 </head>
 <body>
   <!-- START CONTAINER -->
-  <div class="container">
+  <div id="app" class="container">
     <!-- SLIDER -->
     <div class="slider-wrapper">
       <!-- FRECCIA SINISTRA -->
-      <div class="prev">
+      <div class="prev" @click="prevImg">
 
         <i class="fas fa-angle-left"></i>
       </div>
@@ -29,8 +29,7 @@
 
 
       <!-- FRECCIA DESTRA -->
-      <div class="next">
-
+      <div class="next" @click="nextImg">
         <i class="fas fa-angle-right"></i>
       </div>
       <!-- /FRECCIA DESTRA -->
