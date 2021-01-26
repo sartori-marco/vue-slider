@@ -37,6 +37,13 @@
       </div>
       <!-- /FRECCIA DESTRA -->
 
+      <!-- PALLINI -->
+      <div class="nav">
+
+        <i v-for="(img,index) in immagini" class="fas fa-circle" :class="(index == contatore) ? 'active' : ' '" @click="pallini(index)"></i>
+      </div>
+      <!-- /PALLINI -->
+
     </div>
     <!-- /SLIDER -->
 

@@ -25,6 +25,9 @@
 
 .slider-wrapper img {
     height: 100%;
+    width: 90%;
+    text-align: center;
+    margin-left: 59px;
 }
 
 

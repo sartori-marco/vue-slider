@@ -9,7 +9,8 @@ var app = new Vue({
       'img/immagine3.jpg',
       'img/immagine4.jpg'
     ],
-    contatore: 0
+    contatore: 0,
+    intervallo: ''
   },
   methods:{
     // METODO FRECCIA DESTRA NEXT FOTO SUCCESSIVA
@@ -22,6 +23,11 @@ var app = new Vue({
     prevImg(){
       (this.contatore == 0 ) ? this.contatore = this.immagini.length - 1 : this.contatore--;
       console.log(this.contatore);
+    },
+    // CAMBIO IMMAGINI PREMENTO I PALLINI
+    pallini(index){
+      this.contatore = index;
+      clearInterval(this.intervallo)
     }
 
 
